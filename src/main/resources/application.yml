@@ -1,0 +1,18 @@
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LauroSilveira/config-server.git
+          username: LauroSilveira
+          password: zozza4-qafxeh-nyDgav
+management:
+  health:
+    refresh:
+      enabled: true
