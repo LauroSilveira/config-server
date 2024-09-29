@@ -4,14 +4,15 @@ server:
 
 spring:
   application:
-    name: config-server
+    name: spring-config-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/LauroSilveira/config-server.git
+          uri: https://github.com/LauroSilveira/config-file.git
           username: LauroSilveira
           password: zozza4-qafxeh-nyDgav
+
 management:
   health:
     refresh:
