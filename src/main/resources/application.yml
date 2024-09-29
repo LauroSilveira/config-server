@@ -1,4 +1,3 @@
-
 server:
   port: 8888
 
@@ -9,9 +8,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/LauroSilveira/config-file.git
-          username: LauroSilveira
-          password: zozza4-qafxeh-nyDgav
+          uri: https://github.com/LauroSilveira/config-files.git
+          username: ${GITHUB_USERNAME}
+          password: ${GITHUB_PASSWORD}
+          search-paths: '*/**'
+          default-label: 'main'
 
 management:
   health:
